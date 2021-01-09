@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShareIt - Easy file sharing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <img src="/img/logo.png" alt="Inshare logo" class="logo" />
+    <section class="upload-container">
+      <div class="drop-zone">
+        <div class="icon-container">
+          <img
+            src="/img/icon.svg"
+            alt="icon"
+            class="center"
+            draggable="false"
+          />
+        </div>
+        <form action="/files/download" method="POST" enctype="multipart/form-data">
+          <label>Choose file to share</label>
+          <input type="file" name="myFile" id="fileInput" /></br>
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-paper-plane"></i> Submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="upload-vector"></div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
